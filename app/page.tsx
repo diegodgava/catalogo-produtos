@@ -6,6 +6,7 @@ import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import CategoryList from './components/CategoryList';
 import Estimate from './components/Estimate';
+import SearchBar from './components/SearchBar';
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -76,6 +77,7 @@ export default function Home() {
             categories={uniqueCategories}
             onSelectCategory={setSelectedCategory}
           />
+          <SearchBar onProductSelect={handleAddToCart} />
                     <Estimate cartItems={cartItems} />
 
           <Cart

@@ -12,7 +12,7 @@ const ProductList: FC<any> = ({ products, onBack, onAddToCart, onReturnToCategor
   </button>
     <div className="flex flex-col items-center">
 
-      <ul className="mt-4 space-y-4 "> {/* Espaço entre os itens da lista */}
+      <ul className="mt-4 space-y-4 ">
         {products.map((product: any) => (
           <li key={product.id}>
             <ProductItem

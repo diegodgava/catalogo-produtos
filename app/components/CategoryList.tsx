@@ -17,8 +17,6 @@ const CategoryList: FC<any> = ({ categories, onSelectCategory, onProductSelect }
           </div>
         ))}
       </div>
-
-      {/* Colocar a SearchBar na parte inferior do CategoryList */}
     </div>
   );
 };

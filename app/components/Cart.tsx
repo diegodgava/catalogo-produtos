@@ -28,9 +28,9 @@ const Cart: FC<any> = ({ cartItems, onIncreaseQuantity, onDecreaseQuantity, onRe
   </button>
 </div>
               </div>
-              <div className="flex justify-end mr-3"> {/* Centralizar o botão de remover */}
+              <div className="flex justify-end mr-4"> {/* Centralizar o botão de remover */}
   <button
-    className="mt-2 px-1 py-1 border border-red-500 text-sm font-semibold text-red-500 rounded-full hover:bg-red-100 transition" // Borda vermelha e efeito hover sutil
+    className="mt-2 px-1 py-1 border border-red-500 text-xs font-semibold text-red-500 rounded-full hover:bg-red-100 transition" // Borda vermelha e efeito hover sutil
     onClick={() => onRemoveItem(item.id)}
   >
     Remover

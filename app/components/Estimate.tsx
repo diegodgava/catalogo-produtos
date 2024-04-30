@@ -82,12 +82,12 @@ const Estimate: FC<EstimateProps> = ({ cartItems }) => {
   const totalPrice = calculateTotalPrice();
 
   return (
-    <div className="bg-[#69B527] text-black p-6 mt-4 font-semibold rounded-lg shadow-lg">
+    <div className="bg-[#4DE372] text-black p-6 mt-4 font-semibold rounded-lg shadow-lg">
       {/* Alinhar o texto "Price" e o botão na mesma linha */}
-      <div className="flex justify-between items-center">
-        <p>Price: {totalPrice !== null ? `$${totalPrice}` : '--'}</p>
+      <div className="flex justify-between font-bold items-center">
+        <p className='font-bold '>Price: {totalPrice !== null ? `$ ${totalPrice}` : '--'}</p>
         <button
-          className="bg-white text-black px-3 py-1 rounded-lg hover:bg-gray-200 transition-shadow shadow-sm" // Botão menor, mais suave
+          className="bg-white text-black px-3 py-1 rounded-lg hover:bg-gray-200 transition-shadow shadow-sm text-xs font-normal text" // Botão menor, mais suave
           onClick={openModal}
         >
           Ver detalhes
@@ -97,7 +97,7 @@ const Estimate: FC<EstimateProps> = ({ cartItems }) => {
       {cartItems.length > 0 && (
         <div>
           {/* Inserir desconto com ícone de seta para baixo */}
-          <div className="flex items-center mt-4">
+          <div className="flex items-center mt-4 text-sm font-normal">
             <span onClick={handleToggleDiscountBar}>Inserir desconto</span>
             <MdOutlineArrowDropDown
               className="w-6 h-6 cursor-pointer ml-2"
